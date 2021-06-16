@@ -338,13 +338,12 @@ function App() {
             </div>
             <div className="facebook_logo">
             <img src="facebook.png" />
-//               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><g data-name="Layer 2"><path d="M24.57 0H1.43A1.43 1.43 0 000 1.43v23.14A1.43 1.43 0 001.43 26h12.46V16h-3.38v-4h3.38V9.11c0-3.35 2-5.18 5.05-5.18a27.54 27.54 0 013 .15v3.51H19.9c-1.63 0-1.9.78-1.9 1.91V12h3.9l-.56 4H18v10h6.62A1.43 1.43 0 0026 24.57V1.43A1.43 1.43 0 0024.57 0z" data-name="Layer 1"></path></g></svg>
             </div>
             <div className="instagram_logo">
-              <img src="http://localhost:3000/instagram.png" />
+              <img src="instagram.png" />
             </div>
             <div className="linkedin_logo">
-              <img src="http://localhost:3000/linkedin.png" />
+              <img src="linkedin.png" />
             </div>
           </div>  
           {/* <div className="social_media_icons">
