@@ -63,10 +63,10 @@ function App() {
           <div className="container">
             <div className="first">
               <div className="image_big">
-                <img src="http://localhost:3000/big.jpg" />
+                <img src="https://djzfsf1yiw-flywheel.netdna-ssl.com/wp-content/uploads/2020/03/Adige-About-Us-1-625x490.jpg" />
               </div>
               <div className="image_small">
-                <img src="http://localhost:3000/small.jpg" />
+                <img src="https://djzfsf1yiw-flywheel.netdna-ssl.com/wp-content/uploads/2020/04/Custom-Works-2-325x415.jpg" />
               </div>  
             </div>
             <div className="second">
@@ -141,10 +141,10 @@ function App() {
         <div className="container">
             <div className="first">
               <div className="image_big">
-                <img src="http://localhost:3000/serving_developer1.jpg" />
+                <img src="https://djzfsf1yiw-flywheel.netdna-ssl.com/wp-content/uploads/2020/05/Marble-Carving-625x490.jpg" />
               </div>
               <div className="image_small">
-                <img src="http://localhost:3000/serving_developer2.jpg" />
+                <img src="https://djzfsf1yiw-flywheel.netdna-ssl.com/wp-content/uploads/2020/03/Adige-Project-Design-2-325x415.jpg" />
               </div>  
             </div>
             <div className="second">
@@ -172,7 +172,7 @@ function App() {
                   <div className="figure_wrapper">
                     <figure>
                       <div className="image_wrapper">
-                        <img src="http://localhost:3000/project1.jpg" />
+                        <img src="https://djzfsf1yiw-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/Adige_Artisan_Stocco_Tailormade-Featured-864x500.jpg 1x, https://djzfsf1yiw-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/Adige_Artisan_Stocco_Tailormade-Featured-1728x1000.jpg 2x" />
                       </div>
                       <figcaption>Closet System</figcaption>
                     </figure> 
@@ -183,7 +183,7 @@ function App() {
                   <div className="figure_wrapper">
                     <figure>
                       <div className="image_wrapper">
-                        <img src="http://localhost:3000/project_two.jpg" />
+                        <img src="https://djzfsf1yiw-flywheel.netdna-ssl.com/wp-content/uploads/2020/03/Adige_Artisan_Venetian_Gold-Featured-552x700.jpg" />
                       </div>
                       <figcaption>Closet System</figcaption>
                     </figure> 
@@ -195,7 +195,7 @@ function App() {
                     
                       <figure>
                         <div className="image_wrapper">
-                          <img src="http://localhost:3000/project_three.jpg" />
+                          <img src="https://djzfsf1yiw-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/Adige_Artisan_Mingardo-Featured-552x700.jpg" />
                         </div>  
                           <figcaption>Closet System</figcaption>
                       </figure> 
@@ -219,7 +219,7 @@ function App() {
               <div className="figure_wrapper">
                 <figure>
                   <div className="image_wrapper">
-                    <img src="http://localhost:3000/black_one.jpg" />
+                    <img src="https://djzfsf1yiw-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/330Beacon-24-552x700.jpg"/>
                   </div>
                   <figcaption>Closet System</figcaption>
                 </figure> 
@@ -230,7 +230,7 @@ function App() {
               <div className="figure_wrapper">
                 <figure>
                   <div className="image_wrapper">
-                    <img src="http://localhost:3000/black_two.jpg" />
+                    <img src="https://djzfsf1yiw-flywheel.netdna-ssl.com/wp-content/uploads/2020/01/Adige_Proj_Luxury_Residential_Maison_Vernon_FD-Featured-552x700.jpg" />
                   </div>
                   <figcaption>Closet System</figcaption>
                 </figure> 
@@ -241,7 +241,7 @@ function App() {
             <div className="figure_wrapper">
               <figure>
                 <div className="image_wrapper">
-                  <img src="http://localhost:3000/black_three.jpg" />
+                  <img src="https://djzfsf1yiw-flywheel.netdna-ssl.com/wp-content/uploads/2020/03/DSC_1439-2-552x700.jpg" />
                 </div>
                 <figcaption>Closet System</figcaption>
               </figure> 
