@@ -1,0 +1,79 @@
+.navigation {
+    &__checkbox {
+        display: none;
+    }
+
+    &__button {
+        background-color: transparent;
+        position: fixed;
+        z-index: 2000;
+        left: 3rem;
+        font-family: exodus demo stencil;
+        font-size: 8rem;
+    }
+    &__background {
+        height: 1rem;
+        width: 3rem;
+        position: fixed;
+        top: 5.1rem;
+        background: #221f20;
+        z-index: 1000;
+        left: 4.9rem;
+        transition: transform .2s;
+        // transform: scale(50);
+
+    }
+    &__nav {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1500;
+        opacity: 0;
+        width: 0;
+        transition: all 0.8s;
+        &__big_A {
+            position: absolute;
+            top: -32%;
+            left: 66%;
+            transform: translate(-50%, -50%);
+            list-style: none;
+            text-align: center;
+            color: white;
+            font-family: "exodus demo stencil";
+            font-size: 40rem;
+        }
+    }
+    &__list {
+        position: absolute;
+        top: 50%;
+        left: 18%;
+        transform: translate(-50%,-50%);
+        list-style: none;
+        text-align: center;
+    }
+    
+    &__item {
+        margin: 1rem;
+    }
+    &__link {
+        font-size: 3rem;
+        font-weight: 300;
+        color:#cbd1d2;
+        text-decoration: none;
+        font-family: "Exodus Demo stencil";
+        text-transform: uppercase;
+        &:hover , &:active {
+            color: $color-primary-white;
+        }
+    }
+    &__checkbox:checked ~ &__background {
+        transform: scale(80);
+        height: 100vh;
+    }
+    &__checkbox:checked ~ &__nav {
+        opacity: 1;
+        width: 100%;
+    }
+   
+}
