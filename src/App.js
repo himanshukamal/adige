@@ -172,7 +172,8 @@ function App() {
                   <div className="figure_wrapper">
                     <figure>
                       <div className="image_wrapper">
-                        <img src="https://djzfsf1yiw-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/Adige_Artisan_Stocco_Tailormade-Featured-864x500.jpg 1x, https://djzfsf1yiw-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/Adige_Artisan_Stocco_Tailormade-Featured-1728x1000.jpg 2x" />
+                        <img src="https://djzfsf1yiw-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/Adige_Artisan_Stocco_Tailormade-Featured-864x500.jpg" 1x, 
+"https://djzfsf1yiw-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/Adige_Artisan_Stocco_Tailormade-Featured-1728x1000.jpg" 2x />
                       </div>
                       <figcaption>Closet System</figcaption>
                     </figure> 
