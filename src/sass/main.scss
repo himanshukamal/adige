@@ -1,1 +1,626 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "pages/home";
+@import "layout/navigation";
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@600&display=swap");
+
+
+
+.link_wrapper {
+    text-align: center;
+    .link {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Be Vietnam";
+        font-size: 1.2rem;
+        display: inline-block;
+        position: relative;
+        color: $color-primary-white;
+        text-decoration: none;
+        @include respond(phone) {
+            font-size: 1.7rem;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 4px;
+            bottom: -8px;
+            left: 0;
+            background-color:$color-primary-white;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        &:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        &.thin {
+            font-size: 1rem;
+            margin: 1rem auto;
+            text-transform: lowercase;
+            @include respond(phone) {
+                font-size: 1.875rem;
+            }
+            &:after {
+                bottom: -5px;
+                height: 2px;
+            }
+        }
+    }
+}   
+
+
+header {
+    height: max-height;
+    background-color: $color-background-zumthor;
+    .header_wrapper {
+        display: flex;
+       
+        @include respond(tab-port) {
+            display: flex;
+            flex-direction: column;
+        }
+        .header_left {
+            width: 50%;
+            background-color: $color-background-zumthor;
+            @include respond(tab-port) {
+                width:100%;
+            }
+          
+            
+        }
+        .header_right {
+            background-image: url("https://djzfsf1yiw-flywheel.netdna-ssl.com/wp-content/uploads/2020/01/banner.jpg");
+            // background-image: url("https://images.unsplash.com/photo-1621306803471-3a4f1aa2fbee?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+            clip-path: polygon(0% 0%,100% 0%,100% 100%,40% 100%);
+            background-size: cover;
+            width: 50%;
+            @include respond(tab-port) {
+                background-image: url("https://djzfsf1yiw-flywheel.netdna-ssl.com/wp-content/uploads/2020/01/banner.jpg");
+                clip-path: polygon(0% 40%,100% 0%,100% 100%,0% 100%);
+                height: 60vh;
+                width: 100%;
+            }
+            
+            
+        }
+    }    
+}
+
+#vertical_line {
+    width: 100px;
+    background: transparent;
+    transform: rotate(90deg);
+    color: $color-primary-black;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.white {
+    background-color: $color-primary-white;
+    height: max-content;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    .container {
+        display:flex;
+        flex-direction: row;
+        padding: 1rem;
+        text-align: center;
+        @include respond(tab-port) {
+            flex-wrap: wrap;
+        }
+        .first {
+            position: relative;
+            @include respond(tab-port){
+                width: 100vw;
+            }
+            @include respond(big-desktop) {
+                margin-left: 9%;
+            }
+            .image_big {
+                padding: 0rem 7rem;
+                width: 65%;
+                margin-top: 6rem;
+                @include respond(phone) {
+                    padding: 0rem 4rem;
+                }
+                img {
+                    max-width: 496px;
+                    @include respond(phone) {
+                        max-width: 278px;
+                        margin-right: 8rem;
+                    }
+                } 
+                    // background-image:url("http://localhost:3000/grey_one.jpg")
+            }
+            .image_small {
+                position: absolute;
+                transform: translateY(18.9344px);
+                right: 0;
+                top: 166px;
+                @include respond(tab-port) {
+                    transform: translateY(12.934px);
+                    right: 131px;
+                }
+                @include respond(phone) {
+                    transform: translateY(-69.066px);
+                    right: 12vw;
+                }
+                img {
+                    height: 352px;
+                    @include respond(phone) {
+                        height: 221px;
+                    }
+                }
+            }   
+        }
+        .second {
+            color: $color-primary-black;
+            width: max-content;
+            padding: 11.3rem 7rem;
+            text-align: left;
+            font-family: "Be Vietnam";
+            line-height: 1.6rem;
+            letter-spacing: 0.2rem;
+            @include respond(tab-port) {
+                padding: 21.3rem 7rem;
+                padding-bottom: 0;
+            }
+            @include respond(phone) {
+                padding: 13.3rem 2rem;
+                padding-bottom: 0;    
+            }
+            @include respond(big-desktop) {
+                padding: 9rem 11rem;
+            }
+            .header_title {
+                font-family: "Exodus Demo";
+                text-align: left;
+                font-size: 2.6rem;
+                margin: 0;
+                @include respond(tab-port) {
+                    font-size: 3.4rem;
+                }
+                @include respond(phone) {
+                    font-size: 2.6rem;
+                }
+                
+            }
+            p {
+                font-size: 1.125rem;
+                line-height: 180%;
+                margin-top: 3rem;
+                @include respond(tab-port) {
+                    font-size: 2.1rem;
+                    font-weight: 100;
+                    line-height: 200%;
+                }
+                @include respond(phone) {
+                    font-weight: 100;
+                    font-size: 1.8rem;
+                    line-height: 200%;
+                }
+                @include respond(big-desktop) {
+                    letter-spacing: 1.27px;
+                    font-weight: lighter;
+                }
+            }
+        }
+    }
+}
+.grey {
+    background-color: $color-background-zumthor;
+    height: max-content;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    @include respond(phone) {
+        padding-top: 34px;
+        padding-bottom: 42px;
+    }
+    .section_title {
+        padding: 2rem 8.4rem;
+        text-transform: uppercase;
+        margin: 0;
+        color: $color-primary-black;
+        @include respond(phone) {
+            padding: 2rem 1.4rem;
+        }
+    }
+    .sub_title {
+        font-size: 3.6rem;
+        text-transform: uppercase;
+        font-family: "Exodus Demo";
+        width: 41rem;
+        font-weight: bold;
+        margin: 0;
+    }
+    .card_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .card {
+            .image_wrapper {
+                overflow:hidden;
+            }
+            figcaption {
+                font-family: "Exodus Demo";
+                text-align: center;
+                font-size: 2rem;
+                position: relative;
+                bottom: 3rem;
+                color: $color-primary-white;
+            }
+            img {
+                height: 500px;
+                @include respond(phone) {
+                    width: 300px;
+                    height: 73%;
+                }
+                &:hover {
+                    color: white;
+                    opacity: 0.8;
+                    transition: transform .8s cubic-bezier(0.165, 0.84, 0.44, 1);
+                    transform: scale(1.1); 
+                    // background-image:url("http://localhost:3000/grey_one.jpg")
+                }
+            }
+        }
+    }
+}
+.black {
+    background-color:$color-background-black;
+    height: max-content;
+    color: $color-primary-white;
+    overflow: auto;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    @include respond(phone) {
+        padding-top: 34px;
+        padding-bottom: 42px;
+    }
+    .padding {
+        height: 2rem;
+        @include respond(phone) {
+            height: 0rem;
+        }
+    }
+    .section_title {
+        padding: 2rem 8.4rem;
+        text-transform: uppercase;
+        margin: 0;
+        @include respond(phone) {
+            padding: 2rem 1.4rem;
+        }
+         
+    }
+    .title {
+        @include respond(phone) {
+            font-size: 1.500rem;
+            letter-spacing: 0.165em;
+            padding: 0rem 2rem;
+
+        }
+    }
+    .sub_title {
+        font-size: 3.6rem;
+        text-transform: uppercase;
+        font-family: "Exodus Demo";
+        width: 41rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    
+    .card_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .card {
+            .image_wrapper {
+                overflow:hidden;
+            }
+            figcaption {
+                font-family:"Exodus Demo";
+                text-align: center;
+                font-size: 2rem;
+                position: relative;
+                bottom: 3rem;
+            }
+            img {
+                height: 500px;
+                @include respond(phone) {
+                    width: 300px;
+                    height: 73%;
+                }
+                &:hover {
+                    color: white;
+                    opacity: 0.8;
+                    transition: opacity .8s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s,transform .8s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s; 
+                    transform: scale(1.1); 
+                    // background-image:url("http://localhost:3000/grey_one.jpg")
+                }
+            }
+        }
+    }
+}
+.social_media_wrapper {
+        background-color:$color-background-zumthor;
+        height: max-content;
+        justify-content: center;
+        padding-top: 100px;
+        
+        .Social_media{
+            padding: 2rem 10rem;
+            text-transform: uppercase;
+            margin: 0;
+            text-align: center;
+            color: $color-primary-black;
+            font-family: "Be Vietnam";
+            font-size: 1rem;
+        }
+        .sub_title {
+            font-size: 3rem;
+            text-transform: uppercase;
+            
+            width: 41rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        .card_wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-bottom: 6.2rem;
+
+            .card {
+                img {
+                    height: 317px;;
+                    &:hover {
+                        // color: white;
+                        // opacity: 0.8;
+                        // transition: all .2s ease-in-out; 
+                        // transform: scale(1.1); 
+                        background-image:url("http://localhost:3000/grey_one.jpg")
+                    }
+                }
+            }
+        }
+    }
+
+footer {
+    background-color:$color-background-black;
+    color: $color-primary-white;
+    height: max-content;
+    .footer_heading {
+        text-align: center;
+        font-size: 4rem;
+        font-family:"Exodus Demo";
+        padding: 2rem;
+        @include respond(phone) {
+            padding: 4rem;
+        }
+    }
+    .link_wrapper {
+        @include respond(phone) {
+            text-align: left;
+        }
+    }
+    
+    .subheading {
+        @include respond(phone) {
+            margin-left: 40vw;
+        } 
+    } 
+    
+    .middle {
+        
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        @include respond(phone) {
+            flex-direction: column;
+            font-size: 1.875rem;
+        }
+        .margin {
+            padding: 4rem;
+            @include respond(phone) {
+                padding: 1rem 4rem;
+            }
+        }
+      
+       
+    }
+    .logo {
+        display: flex;
+        flex-wrap: wrap;
+        .adige_logo {
+            .first_line {
+                padding: 0rem 11rem;
+                font-family: "Exodus Demo";
+                font-size: 3rem;
+                letter-spacing: 0.4rem;
+                margin-bottom: 0;
+                line-height: 1rem;
+                @include respond(phone) {
+                    padding: 0rem 3rem;
+                }
+            }
+            .second_line {
+                padding: 0.5rem 13.4rem;
+                font-weight: lighter;
+                text-transform: uppercase;
+                font-size: 0.8rem;
+                @include respond(phone) {
+                    padding: 0.5rem 5.4rem;
+                }
+            }
+        }
+        .facebook_logo {
+            img {
+                width: 2rem;
+                padding: 4rem 1rem;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+        .instagram_logo {
+            img {
+                width: 2rem;
+                padding: 4rem 1rem;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+        .linkedin_logo {
+            img {
+                width: 2rem;
+                padding: 4rem 1rem;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}    
+
+.developer_section {
+    background-color: $color-primary-white;
+    height: max-content;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    .container {
+        display:flex;
+        flex-direction: row;
+        padding: 1rem;
+        text-align: center;
+        @include respond(tab-port) {
+            flex-wrap: wrap;
+        }
+        .first {
+            position: relative;
+            @include respond(tab-port){
+                width: 100vw;
+            }
+            @include respond(big-desktop) {
+                margin-left: 9%;
+            }
+            .image_big {
+                padding: 0rem 7rem;
+                width: 65%;
+                margin-top: 6rem;
+                @include respond(phone) {
+                    padding: 0rem 4rem;
+                }
+                img {
+                    max-width: 496px;
+                    @include respond(phone) {
+                        max-width: 278px;
+                        margin-right: 8rem;
+                    }
+                } 
+                    // background-image:url("http://localhost:3000/grey_one.jpg")
+            }
+            .image_small {
+                position: absolute;
+                transform: translateY(18.9344px);
+                right: 0;
+                top: 166px;
+                @include respond(tab-port) {
+                    transform: translateY(12.934px);
+                    right: 131px;
+                }
+                @include respond(phone) {
+                    transform: translateY(-69.066px);
+                    right: 12vw;
+                }
+                img {
+                    height: 352px;
+                    @include respond(phone) {
+                        height: 221px;
+                    }
+                }
+            }   
+        }
+        
+        .second {
+            color: $color-primary-black;
+            width: max-content;
+            padding: 11.3rem 7rem;
+            text-align: left;
+            font-family: "Be vietnam";
+            line-height: 1.6rem;
+            letter-spacing: 0.2rem;
+            @include respond(tab-port) {
+                padding: 21.3rem 7rem;
+                padding-bottom: 0;
+            }
+            @include respond(phone) {
+                padding: 13.3rem 2rem;
+                padding-bottom: 0;    
+            }
+            @include respond(big-desktop) {
+                padding: 9rem 11rem;
+            }
+            .header_title {
+                font-family: "Exodus Demo";
+                font-size: 2.6rem;
+                margin: 0;
+                line-height: 1.1em;
+                @include respond(tab-port) {
+                    font-size: 3.4rem;
+                }
+                @include respond(phone) {
+                    font-size: 2.6rem;
+                }
+            }
+            p {
+                font-size: 1.125rem;
+                line-height: 175%;
+                margin-top: 3rem;
+                @include respond(tab-port) {
+                    font-size: 2.1rem;
+                    font-weight: 100;
+                    line-height: 200%;
+                }
+                @include respond(phone) {
+                    font-weight: 100;
+                    font-size: 1.8rem;
+                    line-height: 200%;
+                }
+                @include respond(big-desktop) {
+                    letter-spacing: 1.27px;
+                    font-weight: lighter;
+                }
+            }
+
+        }
+    }
+}    
+// @media (max-width: 1920px) {
+//     header .header_wrapper .header_right {
+//         background-image: url("https://djzfsf1yiw-flywheel.netdna-ssl.com/wp-content/uploads/2020/01/banner.jpg");
+//         clip-path: polygon(30.44% 737px, 98.46% 99.98%, 364.85% 87.06%, 363.33% 7.64%, 99.32% 0.12%, 0.27% 0.32%);
+//         background-size: cover;
+//         padding: 23rem;
+//         transform: scale(1.2);
+//         margin-left: 9rem;
+//         margin-bottom: 4.5rem;
+//         transition: ease-out;
+//     }
+// }
