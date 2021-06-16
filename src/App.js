@@ -260,7 +260,7 @@ function App() {
               <div className="card">
                 <div className="figure_wrapper">
                   <figure>
-                    <img src="http://localhost:3000/grey_one.jpg" />
+                    <img src="https://djzfsf1yiw-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/330Beacon-24-552x700.jpg" />
                     
                   </figure> 
                 </div>
@@ -269,7 +269,7 @@ function App() {
               <div className="card">
                 <div className="figure_wrapper">
                   <figure>
-                    <img src="http://localhost:3000/grey_two.jpg" />
+                    <img src="https://djzfsf1yiw-flywheel.netdna-ssl.com/wp-content/uploads/2020/01/Adige_Proj_Luxury_Residential_Maison_Vernon_FD-Featured-552x700.jpg" />
                     
                   </figure> 
                 </div>
@@ -278,7 +278,7 @@ function App() {
               <div className="card">
                 <div className="figure_wrapper">
                   <figure>
-                    <img src="http://localhost:3000/grey_three.jpg" />
+                    <img src="https://djzfsf1yiw-flywheel.netdna-ssl.com/wp-content/uploads/2020/03/DSC_1439-2-552x700.jpg" />
                     
                   </figure> 
                 </div>
@@ -287,7 +287,7 @@ function App() {
               <div className="card">
               <div className="figure_wrapper">
                 <figure>
-                  <img src="http://localhost:3000/watch1.jpg" />
+                  <img src="https://djzfsf1yiw-flywheel.netdna-ssl.com/wp-content/uploads/2020/03/DSC_1439-2-552x700.jpg" />
                   
                 </figure> 
               </div>
