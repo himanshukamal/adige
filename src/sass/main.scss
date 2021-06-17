@@ -15,7 +15,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@600&display=swap");
 
-
+@font-face {
+    font-family: 'Exodus Demo';
+    src: url('fonts/ExodusDemo-Regular.otf'), url('fonts/ExodusDemo-Sharpen.otf') format('truetype'), url('fonts/ExodusDemo-Stencil.otf');
+    
+}
 
 .link_wrapper {
     text-align: center;
