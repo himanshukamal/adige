@@ -18,8 +18,8 @@
 @font-face {
     font-family: 'Exodus Demo';
     src:local( 'Exodus Demo') url('./fonts/Exodus Demo/ExodusDemo-Regular.otf') format('truetype'),
-        url('./fonts/Exodus Demo/ExodusDemo-Sharpen.otf') format('truetype'), 
-        url('./fonts/Exodus Demo/ExodusDemo-Stencil.otf') format('truetype');
+        local( 'Exodus Demo') url('./fonts/Exodus Demo/ExodusDemo-Sharpen.otf') format('truetype'), 
+        local( 'Exodus Demo') url('./fonts/Exodus Demo/ExodusDemo-Stencil.otf') format('truetype');
     
 }
 
