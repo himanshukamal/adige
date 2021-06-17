@@ -12,7 +12,7 @@ function App() {
             </div> */}
 
             <div className="__menu">
-              <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+              <input type="checkbox" className="navigation__checkbox" id="navi-toggle" />
               <label for="navi-toggle" className="navigation__button">A</label>
 
               <div class="navigation__background">&nbsp;</div>
